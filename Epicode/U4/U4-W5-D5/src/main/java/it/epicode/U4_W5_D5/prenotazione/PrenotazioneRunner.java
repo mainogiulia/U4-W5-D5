@@ -22,6 +22,7 @@ public class PrenotazioneRunner implements ApplicationRunner {
     private final PostazioneService postazioneService;
     private final PostazioneRepo postazioneRepo;
 
+    @Transactional
     public void run(ApplicationArguments args) throws Exception {
 
         boolean choice = true;

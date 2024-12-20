@@ -25,5 +25,6 @@ public class Edificio {
     private String citta;
 
     @OneToMany(mappedBy = "edificio")
+    @ToString.Exclude
     List<Postazione> postazioni = new ArrayList<>();
 }
